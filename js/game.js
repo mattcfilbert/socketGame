@@ -19,7 +19,7 @@ Game.create = () => {
   var map = game.add.tilemap('map')
   map.addTilesetImage('tilesheet', 'tileset') // tilesheet is the key of the tileset in map's JSON file
   var layer
-  for (var i = 0; i > map.layers.length; i++) {
+  for (var i = 0; i < map.layers.length; i++) {
     layer = map.createLayer(i)
   }
   layer.inputEnabled = true // Allows clicking on the map
