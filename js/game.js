@@ -1,6 +1,5 @@
-var game = new Phaser.Game(24*32, 17*32, Phaser.AUTO, document.getElementById('game'))
-game.state.add('Game', Game)
-game.state.start('Game')
+var game = new Phaser.Game(24 * 32, 17 * 32, Phaser.AUTO, document.getElementById('game'))
+
 
 var Game = {}
 
@@ -29,3 +28,6 @@ Game.create = () => {
 Game.addNewPlayer = (id, x, y) => {
   Game.playerMap[id] = game.add.sprite(x, y, 'sprite')
 }
+
+game.state.add('Game', Game)
+game.state.start('Game')
